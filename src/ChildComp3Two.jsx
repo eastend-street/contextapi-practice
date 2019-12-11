@@ -5,7 +5,7 @@ class ChildComp3Two extends React.Component {
   static contextType = TestContext
   render() {
     console.log(this.context)
-    return <div>this is consumer2: {this.context}</div>
+    return <div>this is consumer2: {this.context.students}</div>
   }
 }
 

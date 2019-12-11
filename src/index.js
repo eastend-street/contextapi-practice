@@ -5,7 +5,12 @@ import ChildComp from './ChildComp'
 
 const App = () => {
   return (
-    <TestContext.Provider value={'light'}>
+    <TestContext.Provider
+      value={{
+        students: ['Marie', 'Taishi', 'Shota'],
+        onSubmit: data => console.log(data),
+      }}
+    >
       <div>Hello</div>
       <ChildComp />
     </TestContext.Provider>
